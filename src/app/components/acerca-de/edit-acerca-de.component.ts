@@ -15,33 +15,32 @@ export class EditAcercaDeComponent implements OnInit {
   constructor(private activatedRouter: ActivatedRoute, 
               private personaService: PersonaService, 
               private router: Router,
-              public imageServis: ImageService) { }
+              public imageService: ImageService) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.personaService.detail(id).subscribe({next: (data) =>{
+    this.personaService.detail(id).subscribe({next:(data) =>{
         this.persona = data;
       }, error: err =>{
          alert("Error al modificar");
          this.router.navigate(['']);
       }
-  })
+    })
   }
   onUpdate():void{
     const id = this.activatedRouter.snapshot.params['id'];
+    this.persona.img= this.imageService.url
     this.personaService.update(id, this.persona).subscribe({next:(data) => {
         this.router.navigate(['']);
-      }, error:err => {
+      },error: err => {
         alert("Error al modificar la persona");
         this.router.navigate(['']);
       }
-  })
+     } )
   }
-
-
   upLoadImage($event:any){
     const id= this.activatedRouter.snapshot.params['id'];
-    const name = "perfil"+ id;
-    //this.imageService.upLoadImage($event,name);
+    const name = "perfil_"+ id;
+    this.imageService.upLoadImage($event,name);
   }
 }

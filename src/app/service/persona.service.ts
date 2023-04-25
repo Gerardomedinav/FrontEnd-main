@@ -11,7 +11,6 @@ import { environment } from 'src/environments/environment';
 export class PersonaService {
   URL= environment.URL + 'personas/';
 
-
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<persona[]>{

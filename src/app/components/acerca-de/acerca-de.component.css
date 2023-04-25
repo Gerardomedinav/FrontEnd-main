@@ -2,8 +2,12 @@
     padding: 20px;
 }
 div{
-    background-color: #a1b5cb;
+    background-color: #a9cef7;
     text-align: center;
+    
+}
+@media (max-width: 768px) {
+
 }
 /*Estilo de la foto de perfil*/
 @media (min-width: 576px){
@@ -13,7 +17,7 @@ div{
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 3%;
-        top:550px;
+        top: 457px;
     }
 }
 @media (max-width: 575px){
@@ -24,6 +28,11 @@ div{
         box-shadow: 3px 3px 3px grey;
         left: 33%;
         top:950px;
+    }
+}
+@media(max-width: 375px){
+    img#fotodeperfil{
+        top: 635px !important;
     }
 }
 
