@@ -29,5 +29,6 @@ export class NewExperienciaComponent implements OnInit {
       }
     )
   }
+  
 
 }

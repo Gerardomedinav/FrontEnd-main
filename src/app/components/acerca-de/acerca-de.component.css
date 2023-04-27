@@ -6,38 +6,53 @@ div{
     text-align: center;
     
 }
-@media (max-width: 768px) {
-
+h5{
+    color: rgb(4, 4, 104);
 }
+
+
 /*Estilo de la foto de perfil*/
-@media (min-width: 576px){
+@media (min-width: 667px){
     #fotodeperfil{
         position: absolute;
         width: 15%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        left: 3%;
-        top: 457px;
+        left: 17.5%;
+        top: 561px;
     }
 }
-@media (max-width: 575px){
-    #fotodeperfil{
-        position: absolute;
-        width: 30%;
-        border-radius: 100%;
-        box-shadow: 3px 3px 3px grey;
-        left: 33%;
-        top:950px;
-    }
+p{
+    color: rgb(3, 3, 73);
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 @media(max-width: 375px){
     img#fotodeperfil{
+        position: absolute;
+        width: 50%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
         top: 635px !important;
+        left: 26%
     }
 }
+@media (max-width: 668px){
+#fotodeperfil {
+    position: absolute;
+    width: 15%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px grey;
+    left: 17.5%;
+    top: 342px;
+}
+}
+
 
 /*etiqueta nombre*/
 #nombre{
     font-weight: bold;
     margin-top: 30%;
 }
+

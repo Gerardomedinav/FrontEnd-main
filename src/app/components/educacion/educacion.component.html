@@ -7,25 +7,23 @@
     </div>
 
     <div class="col lg 1"></div>
-    <div class="col-lg-11">
-        <table class="table">
-            <tbody>
-                <tr *ngFor="let Educacion of educacion">
-                    <td>
+    <div  class="col-lg-11">
+        
+                <div id="educacion" *ngFor="let Educacion of educacion">
+                    
                         <h2>{{Educacion.nombreE}}</h2>
-                    </td>
-                    <td>{{Educacion.descripcionE}}</td>
-                    <td *ngIf="isLogged">
+                    
+                   <h5>{{Educacion.descripcionE}}</h5>
+                    <div *ngIf="isLogged">
                         <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
                             <i class="bi bi-pencil-fill"></i> EDITAR</button>
-                    </td>
-                    <td *ngIf="isLogged">
+                      
+                  
                         <button class="btn btn-danger" (click)="delete(Educacion.id)">
                             <i class="bi bi-trash-fill"></i> BORRAR</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        </div>  
+                </div>
+   
     </div>
 
 </div>

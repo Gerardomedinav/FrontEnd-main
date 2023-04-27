@@ -10,7 +10,7 @@ export class ImageService {
 
   constructor( private storage: Storage) { }
   
-  public upLoadImage($event:any, name:string){
+  public upLoadImage($event:any, name:string,id:number){
   const file = $event.target.files[0];
   const imgRef = ref( this.storage, `imagen/`+ name)
   uploadBytes(imgRef, file)
