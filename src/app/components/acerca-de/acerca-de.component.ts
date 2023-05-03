@@ -27,6 +27,7 @@ export class AcercaDeComponent implements OnInit {
       this.persona = data
     })
   }
+  
 
 }
 

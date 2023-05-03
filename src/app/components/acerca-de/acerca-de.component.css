@@ -19,7 +19,7 @@ h5{
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
         left: 17.5%;
-        top: 561px;
+        top: 43rem;
     }
 }
 p{
@@ -34,7 +34,7 @@ p{
         width: 50%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        top: 635px !important;
+        top: 44rem !important;
         left: 26%
     }
 }
@@ -56,3 +56,7 @@ p{
     margin-top: 30%;
 }
 
+img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5)
+}

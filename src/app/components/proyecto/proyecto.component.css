@@ -33,3 +33,16 @@ div#experiencia {
 button{
     margin: 15px;
 }
+.img-proyecto:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3)
+}
+
+@media (max-width: 768px) {
+
+    .img-proyecto:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1)
+    }
+}
+    
